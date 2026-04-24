@@ -1,11 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Shakira Fea</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakira Fea - Sitio Oficial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            padding: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .image-container {
+            margin: 20px 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #999;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hueles mal...</h1>
-<img src="david.png" alt="David" width="400">
-    <p>Bañate ya</p>
+    <div class="card">
+        <h1>⚠️ Hueles mal...</h1>
+        
+        <div class="image-container">
+            <img src="david.png" alt="David" width="400">
+        </div>
+        
+        <p>🌊 <strong>¡Bañate ya!</strong> 🧼</p>
+        <div class="badge">Consejo del día: Usa jabón</div>
+        <div class="footer">
+            &copy; 2024 - Shakira Fea Inc.
+        </div>
+    </div>
 </body>
 </html>
